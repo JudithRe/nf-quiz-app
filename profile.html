@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+        <img src="assets/question.png" alt="">
+      <h1>Profile</h1>
+    </header>
+    <main>
+        <section class="card">
+            <article class="profile-card">
+            <img src="assets/Screenshot 2023-06-07 at 16.18.35.png" alt="your profile picture">
+            <h2 class="profile-name">Jane Doe</h2>
+        </article>
+            <p class="profile-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A id aliquam accusantium sed temporibus nihil corrupti saepe veniam, aperiam laboriosam vel ullam commodi suscipit quod fugit, delectus eaque nulla molestiae.</p>
+      
+            <ul class="counters">
+                <li><span role="img" aria-label="questions created">+</span> 15</li>
+                <li><a href="bookmarks.html"><img aria-label="questions saved" src="assets/bookmark_dark.png" alt="bookmark icon"> 215</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Settings</h2>
+            <article class="profile-card">
+                <p>Dark Mode</p>
+            <label class="dark-mode-switch">
+                <input class="dark-mode-input" type="checkbox">
+                <span class="slider"></span>
+             
+              </label></article>
+        </section>
+
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-menu">
+          <a aria-label="go to home page" href="#"><li>
+            <img src="assets/home_white.png" alt="home icon" /></a>
+          </li>
+          <li>
+            <a aria-label="go to bookmarks" href="bookmarks.html"><img
+              src="assets/bookmark_white.png"
+              alt="bookmark icon"
+            /></a>
+          </li>
+          <li id="footer-nav-active">
+            <a aria-label="go to profile page" href="profile.html" ><img src="assets/user_white.png" alt="user icon" /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
