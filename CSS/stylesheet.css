@@ -55,6 +55,8 @@ main {
   padding: 20px;
   box-shadow: 5px 5px 10px #7a828c;
   border-radius: 10px;
+  max-width: 450px;
+  min-width: 350px;
 }
 
 .bookmark {
