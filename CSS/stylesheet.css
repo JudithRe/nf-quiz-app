@@ -55,7 +55,27 @@ main {
   right: 15px;
 }
 
+.tag-list {
+  align-self: flex-start;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 15px 0 0 0;
+}
+.tag-list li {
+  background-color: #46cdc9;
+  color: #f1f7f5;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Answer Button and Text Styling*/
+
 .answer-button {
+  display: none;
+}
+
+label {
   background-color: #46cdc9;
   color: #f1f7f5;
   text-decoration: none;
@@ -63,23 +83,28 @@ main {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 3px 10px#7a828c;
-}
-.answer-button:hover {
-  background-color: #33a8c5;
+  display: block;
+  cursor: pointer;
+
+  transition: ease 0.5s;
 }
 
-.tag-list {
-  align-self: flex-start;
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding-left: 0;
+label:hover {
+  background: #33a8c5;
 }
-.tag-list li {
-  background-color: #46cdc9;
-  color: #f1f7f5;
-  padding: 5px 10px;
-  border-radius: 10px;
+
+.answer-button-content {
+  padding: 10px 25px;
+
+  border-radius: 3px;
+}
+
+input + label + .answer-button-content {
+  display: none;
+}
+
+input:checked + label + .answer-button-content {
+  display: block;
 }
 
 /* Footer Styling */
