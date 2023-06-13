@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* #46cdc9 
+#18687B*/
+
+/* Header Styling */
+.header {
+  background-color: #33a8c5;
+  border-radius: 0 0 10px 10px;
+  color: #f1f7f5;
+  padding: 20px;
+  width: 100vw;
+  box-shadow: 0 5px 15px #7a828c;
+  position: fixed;
+  top: 0;
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Styling */
+body {
+  background-color: #f1f7f5;
+}
+
+main {
+  padding: 140px 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Card Styling */
+
+.card {
+  position: relative;
+  background-color: #ffff;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #7a828c;
+  border-radius: 10px;
+}
+
+.bookmark {
+  padding: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -2.5rem;
+  right: 15px;
+}
+
+.tag-list {
+  align-self: flex-start;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 15px 0 0 0;
+}
+.tag-list li {
+  background-color: #33a8c5;
+  color: #f1f7f5;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Answer Button and Text Styling*/
+
+.answer-button {
+  display: none;
+}
+
+label {
+  background-color: #33a8c5;
+  color: #f1f7f5;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px#7a828c;
+  display: block;
+  cursor: pointer;
+
+  transition: ease 0.5s;
+}
+
+label:hover {
+  background: #18687b;
+}
+
+.answer-button-content {
+  padding: 10px 25px;
+
+  border-radius: 3px;
+}
+
+input + label + .answer-button-content {
+  display: none;
+}
+
+input:checked + label + .answer-button-content {
+  display: block;
+}
+
+/* Footer Styling */
+
+footer {
+  /*  background-color: #f1f7f5; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  /* background-color: #f1f7f5;*/
+}
+
+.footer-menu li {
+  background-color: #33a8c5;
+  height: 8vh;
+  width: 33%;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: -1px -1px 5px #7a828c;
+}
+
+.footer-menu li:hover {
+  background-color: #18687b;
+}
+
+#footer-nav-active {
+  background-color: #18687b;
+}
