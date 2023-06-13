@@ -10,7 +10,7 @@
 
 /* Header Styling */
 .header {
-  background-color: #33a8c5;
+  background-color: #18687b;
   border-radius: 0 0 10px 10px;
   color: #f1f7f5;
   padding: 20px;
@@ -33,7 +33,7 @@ main {
   padding: 140px 0 100px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -52,10 +52,10 @@ main {
 }
 
 .bookmark {
-  padding: 10px;
-  border-radius: 100%;
+  background-color: transparent;
+  border: none;
   position: absolute;
-  top: -2.5rem;
+  top: -1rem;
   right: 15px;
 }
 
@@ -67,7 +67,7 @@ main {
   padding: 15px 0 0 0;
 }
 .tag-list li {
-  background-color: #33a8c5;
+  background-color: #6b8186;
   color: #f1f7f5;
   padding: 5px 10px;
   border-radius: 10px;
@@ -79,27 +79,26 @@ main {
   display: none;
 }
 
-label {
-  background-color: #33a8c5;
+.answer-button-label {
+  background-color: #18687b;
   color: #f1f7f5;
   text-decoration: none;
   font-weight: 700;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 3px 10px#7a828c;
-  display: block;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
   cursor: pointer;
-
-  transition: ease 0.5s;
 }
 
-label:hover {
+.answer-button-label:hover {
   background: #18687b;
 }
 
 .answer-button-content {
   padding: 10px 25px;
-
   border-radius: 3px;
 }
 
@@ -131,7 +130,7 @@ footer {
 }
 
 .footer-menu li {
-  background-color: #33a8c5;
+  background-color: #18687b;
   height: 8vh;
   width: 33%;
   padding: 15px;
@@ -141,9 +140,9 @@ footer {
 }
 
 .footer-menu li:hover {
-  background-color: #18687b;
+  background-color: #33a8c5;
 }
 
 #footer-nav-active {
-  background-color: #18687b;
+  background-color: #33a8c5;
 }
