@@ -5,9 +5,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* #46cdc9 
+#18687B*/
+
 /* Header Styling */
 .header {
-  background-color: #46cdc9;
+  background-color: #33a8c5;
   border-radius: 0 0 10px 10px;
   color: #f1f7f5;
   padding: 20px;
@@ -15,6 +18,7 @@
   box-shadow: 0 5px 15px #7a828c;
   position: fixed;
   top: 0;
+
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -63,7 +67,7 @@ main {
   padding: 15px 0 0 0;
 }
 .tag-list li {
-  background-color: #46cdc9;
+  background-color: #33a8c5;
   color: #f1f7f5;
   padding: 5px 10px;
   border-radius: 10px;
@@ -76,7 +80,7 @@ main {
 }
 
 label {
-  background-color: #46cdc9;
+  background-color: #33a8c5;
   color: #f1f7f5;
   text-decoration: none;
   font-weight: 700;
@@ -90,7 +94,7 @@ label {
 }
 
 label:hover {
-  background: #33a8c5;
+  background: #18687b;
 }
 
 .answer-button-content {
@@ -127,7 +131,7 @@ footer {
 }
 
 .footer-menu li {
-  background-color: #ffff;
+  background-color: #33a8c5;
   height: 8vh;
   width: 33%;
   padding: 15px;
@@ -137,9 +141,9 @@ footer {
 }
 
 .footer-menu li:hover {
-  background-color: #33a8c5;
+  background-color: #18687b;
 }
 
 #footer-nav-active {
-  background-color: #33a8c5;
+  background-color: #18687b;
 }
