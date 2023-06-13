@@ -139,3 +139,7 @@ footer {
 .footer-menu li:hover {
   background-color: #33a8c5;
 }
+
+#footer-nav-active {
+  background-color: #33a8c5;
+}
