@@ -1,0 +1,55 @@
+/* Toggle Switch */
+
+.dark-mode-switch input {
+  display: none;
+}
+
+.dark-mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.dark-mode-switch span {
+  position: absolute;
+  background-color: #adc3c8;
+  border-radius: 17px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dark-mode-switch span::before {
+  position: absolute;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  content: "";
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+}
+
+.dark-mode-input:checked + span {
+  background-color: var(--highlight-color);
+}
+
+.dark-mode-input:checked + span::before {
+  transform: translateX(30px);
+}
+
+.dark-mode-input:checked + body {
+  background-color: var(--main-color);
+}
+
+.background--dark {
+  background-color: var(--main-color);
+}
+
+.background--very-dark .card {
+  background-color: var(--dark-highlight);
+  color: var(--light-background-color);
+}

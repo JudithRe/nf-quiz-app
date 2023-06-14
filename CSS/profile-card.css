@@ -1,0 +1,39 @@
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-card img {
+  width: 40%;
+  border-radius: 100%;
+}
+
+.profile-description {
+  width: 90%;
+}
+
+.counters {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.counters li {
+  background-color: var(--dark-background-color);
+  color: var(--light-background-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.counters img {
+  height: 1rem;
+}
+
+.counters a {
+  text-decoration: none;
+  color: var(--light-background-color);
+}

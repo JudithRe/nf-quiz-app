@@ -1,0 +1,76 @@
+.card {
+  position: relative;
+  background-color: var(--white-background-color);
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px var(--dark-background-color);
+  border-radius: 10px;
+  max-width: 450px;
+  min-width: 350px;
+}
+
+.bookmark {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -1rem;
+  right: 15px;
+}
+
+.bookmark img {
+  height: 50px;
+}
+
+.tag-list {
+  align-self: flex-start;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 15px 0 0 0;
+}
+.tag-list li {
+  background-color: var(--dark-background-color);
+  color: #f1f7f5;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Answer Button and Text Styling*/
+
+.answer-button {
+  display: none;
+}
+
+.answer-button-label {
+  background-color: var(--main-color);
+  color: #f1f7f5;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px var(--dark-background-color);
+  cursor: pointer;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+}
+.answer-button-label:hover {
+  background: var(--main-color);
+}
+
+.answer-button-content {
+  padding: 10px 25px;
+
+  border-radius: 3px;
+}
+
+input + label + .answer-button-content {
+  display: none;
+}
+
+input:checked + label + .answer-button-content {
+  display: block;
+}
