@@ -6,13 +6,13 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="/CSS/stylesheet.css" />
   </head>
-  <body>
+  <body data-js="main-content">
     <header class="header">
         <img src="assets/question.png" alt="">
       <h1>Profile</h1>
     </header>
-    <main>
-        <section class="card">
+    <main data-js="card-section">
+        <section id="dark" class="card">
             <article class="profile-card">
             <img src="assets/Screenshot 2023-06-07 at 16.18.35.png" alt="your profile picture">
             <h2 class="profile-name">Jane Doe</h2>
@@ -23,16 +23,15 @@
                 <li><span role="img" aria-label="questions created">+</span> 15</li>
                 <li><a href="bookmarks.html"><img aria-label="questions saved" src="assets/bookmark_dark.png" alt="bookmark icon"> 215</a></li>
             </ul>
-        </section>
-        <section class="card">
+          </section>
+          <section class="card">
             <h2>Settings</h2>
             <article class="profile-card">
                 <p>Dark Mode</p>
-            <label class="dark-mode-switch">
-                <input class="dark-mode-input" type="checkbox">
+            <label class="dark-mode-switch" >
+                <input class="dark-mode-input" type="checkbox" js-data="dark-mode-switch">
                 <span class="slider"></span>
-             
-              </label></article>
+                           </label></article>
         </section>
 
     </main>
@@ -55,4 +54,5 @@
       </nav>
     </footer>
   </body>
+  <script src="/JS/darkMode.js"></script>
 </html>
