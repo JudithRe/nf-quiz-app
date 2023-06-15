@@ -12,15 +12,21 @@
   min-width: 350px;
 }
 
-.bookmark {
+.card__bookmark-button {
   background-color: transparent;
   border: none;
   position: absolute;
+  font-size: 2.2em;
   top: -1rem;
   right: 15px;
+  color: var(--main-color);
 }
 
-.bookmark img {
+.card__bookmark-button--clicked {
+  color: var(--highlight-color);
+}
+
+.card__bookmark-button img {
   height: 50px;
 }
 
