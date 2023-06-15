@@ -1,4 +1,4 @@
-.profile-card {
+.card__profile-card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,34 +6,34 @@
   gap: 20px;
 }
 
-.profile-card img {
+.card__profile-card img {
   width: 40%;
   border-radius: 100%;
 }
 
-.profile-description {
+.card__profile-description {
   width: 90%;
 }
 
-.counters {
+.card__counters {
   display: flex;
   gap: 15px;
   list-style-type: none;
   padding: 0;
 }
 
-.counters li {
+.card__counters li {
   background-color: var(--dark-background-color);
   color: var(--light-background-color);
   padding: 10px;
   border-radius: 10px;
 }
 
-.counters img {
+.card__counters img {
   height: 1rem;
 }
 
-.counters a {
+.card__counters a {
   text-decoration: none;
   color: var(--light-background-color);
 }
