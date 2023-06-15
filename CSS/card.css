@@ -30,14 +30,14 @@
   height: 50px;
 }
 
-.tag-list {
+.card__tag-list {
   align-self: flex-start;
   display: flex;
   gap: 15px;
   list-style: none;
   padding: 15px 0 0 0;
 }
-.tag-list li {
+.card__tag-list li {
   background-color: var(--dark-background-color);
   color: #f1f7f5;
   padding: 5px 10px;
@@ -46,37 +46,30 @@
 
 /* Answer Button and Text Styling*/
 
-.answer-button {
-  display: none;
-}
-
-.answer-button-label {
+.card__answer-button {
   background-color: var(--main-color);
   color: #f1f7f5;
   text-decoration: none;
   font-weight: 700;
   padding: 10px;
+  border: none;
   border-radius: 10px;
-  box-shadow: 2px 3px 10px var(--dark-background-color);
   cursor: pointer;
+  box-shadow: 2px 3px 10px var(--dark-background-color);
   position: absolute;
   bottom: 35px;
   right: 20px;
 }
-.answer-button-label:hover {
-  background: var(--main-color);
+.card__answer-button:hover {
+  background: var(--highlight-color);
 }
 
-.answer-button-content {
+.card__answer-text {
   padding: 10px 25px;
-
+  display: none;
   border-radius: 3px;
 }
 
-input + label + .answer-button-content {
-  display: none;
-}
-
-input:checked + label + .answer-button-content {
+.card__answer-text--show {
   display: block;
 }
