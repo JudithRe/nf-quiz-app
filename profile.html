@@ -19,7 +19,7 @@
         </article>
             <p class="card__profile-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A id aliquam accusantium sed temporibus nihil corrupti saepe veniam, aperiam laboriosam vel ullam commodi suscipit quod fugit, delectus eaque nulla molestiae.</p>
       
-            <ul class="card__counters">
+            <ul class="card__counters" data-js="card__counters">
                 <li><span role="img" aria-label="questions created"><i class="bi bi-plus-circle-fill"></i></i></span> 15</li>
                 <li><a href="bookmarks.html"><i class="bi bi-bookmark-fill"></i> 215</a></li>
             </ul>
@@ -38,15 +38,20 @@
     <footer>
       <nav>
         <ul class="footer-menu" data-js="footer-menu">
-          <a aria-label="go to home page" href="index.html"><li>
-            <i class="bi bi-house-door-fill"></i></a>
+          <li>
+            <a  aria-label="go to home page" href="index.html"
+              ><i class="bi bi-house-door-fill"></i
+            ></a>
           </li>
           <li>
-            <a aria-label="go to bookmarks" href="bookmarks.html"><i class="bi bi-bookmarks-fill"></i></a>
-            
+            <a aria-label="go to bookmarks" href="bookmarks.html"
+              ><i class="bi bi-bookmarks-fill"></i
+            ></a>
           </li>
-          <li id="footer-menu--active">
-            <a aria-label="go to profile page" href="#"><i class="bi bi-person-fill"></i></a>
+          <li>
+            <a id="footer-menu--active" aria-label="go to profile page" href="#"
+              ><i class="bi bi-person-fill"></i
+            ></a>
           </li>
         </ul>
       </nav>
