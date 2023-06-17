@@ -15,9 +15,7 @@
   --heading1-height--desktop: 2rem;
   --heading1-height--mobile: 1.5rem;
   --gap-height: 20px;
-  --header-height: calc(
-    var(--header-image-height--desktop) + var(--gap-height)
-  );
+  --header-height: calc(var(--header-image-height--mobile) + var(--gap-height));
   --footer-menu-height: 5rem;
 }
 
@@ -26,6 +24,10 @@
 *::before {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 h1 {
