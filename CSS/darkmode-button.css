@@ -46,10 +46,13 @@
 }
 
 .background--dark {
-  background-color: var(--main-color);
+  background-color: var(--dark-highlight);
 }
 
 .background--very-dark .card {
-  background-color: var(--dark-highlight);
-  color: var(--light-background-color);
+  box-shadow: 5px 5px 10px black;
+}
+
+.box-shadow--darkmode li {
+  box-shadow: -1px -1px 5px black;
 }

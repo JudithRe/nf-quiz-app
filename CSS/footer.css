@@ -17,8 +17,8 @@ footer {
 
 .footer-menu li {
   background-color: var(--main-color);
-  height: 2em;
-  font-size: 3em;
+  height: var(--footer-menu-height);
+  font-size: var(--footer-menu-height);
 
   width: 33%;
   padding: 15px;
@@ -36,8 +36,4 @@ footer {
 
 #footer-menu--active {
   background-color: var(--highlight-color);
-}
-
-.footer-menu img {
-  height: 2.5rem;
 }

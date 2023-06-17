@@ -1,10 +1,24 @@
 :root {
+  /* Colours */
+
   --main-color: #18687b;
   --dark-highlight: #0e343e;
   --highlight-color: #33a8c5;
   --dark-background-color: #adc3c8;
   --light-background-color: #f1f7f5;
   --white-background-color: #ffff;
+
+  /* Heights */
+
+  --header-image-height--desktop: 150px;
+  --header-image-height--mobile: 100px;
+  --heading1-height--desktop: 2rem;
+  --heading1-height--mobile: 1.5rem;
+  --gap-height: 20px;
+  --header-height: calc(
+    var(--header-image-height--desktop) + var(--gap-height)
+  );
+  --footer-menu-height: 5rem;
 }
 
 *,
@@ -14,25 +28,25 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  font-size: var(--heading1-height--mobile);
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: var(--heading1-height--desktop);
+  }
+}
+
 body {
   background-color: #f1f7f5;
 }
 
-main {
+.content-area {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-}
-
-@media (min-width: 600px) {
-  main {
-    padding: 140px 0 100px 0;
-  }
-}
-
-@media (max-width: 599px) {
-  main {
-    padding: 250px 0 100px 0;
-  }
+  margin-top: calc(var(--header-height) + 1rem);
+  margin-bottom: calc(var(--footer-menu-height) + 1rem);
 }
