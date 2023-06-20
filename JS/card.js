@@ -7,6 +7,7 @@ const bookmarkButton2 = getElementbyDataJS("card__bookmark-button--2");
 const bookmarkButton3 = getElementbyDataJS("card__bookmark-button--3");
 const bookmarkButton4 = getElementbyDataJS("card__bookmark-button--4");
 const bookmarkButton5 = getElementbyDataJS("card__bookmark-button--5");
+const bookmarkButton6 = getElementbyDataJS("card__bookmark-button--6");
 
 // Variables for Answer Buttons
 
@@ -57,7 +58,6 @@ function multipleChoiceAnswer(id) {
   const button = document.querySelector(
     `[data-js="card__option-button--${id}"]`
   );
-
   if (button.classList.contains("--is-correct")) {
     button.style.backgroundColor = "var(--highlight-color)";
     button.style.animation = "vertical-shaking 0.35s 0.01s";
@@ -83,6 +83,9 @@ bookmarkButton4.addEventListener("click", () => {
 });
 bookmarkButton5.addEventListener("click", () => {
   toggleBookmarkButton(bookmarkButton5);
+});
+bookmarkButton6.addEventListener("click", () => {
+  toggleBookmarkButton(bookmarkButton6);
 });
 
 // Event Listeners for Answer Buttons
