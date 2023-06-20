@@ -1,42 +1,13 @@
 console.clear();
 
-// Variables for Bookmark Buttons
+// Functions
 
-const bookmarkButton1 = document.querySelector(
-  '[data-js="card__bookmark-button--1"]'
-);
-const bookmarkButton2 = document.querySelector(
-  '[data-js="card__bookmark-button--2"]'
-);
-const bookmarkButton3 = document.querySelector(
-  '[data-js="card__bookmark-button--3"]'
-);
-const bookmarkButton4 = document.querySelector(
-  '[data-js="card__bookmark-button--4"]'
-);
-const bookmarkButton5 = document.querySelector(
-  '[data-js="card__bookmark-button--5"]'
-);
-
-// Variables for Answer Buttons
-
-const answerButton1 = document.querySelector(
-  '[data-js="card__answer-button--1"]'
-);
-const answerButton2 = document.querySelector(
-  '[data-js="card__answer-button--2"]'
-);
-const answerButton3 = document.querySelector(
-  '[data-js="card__answer-button--3"]'
-);
-const answerButton4 = document.querySelector(
-  '[data-js="card__answer-button--4"]'
-);
-const answerButton5 = document.querySelector(
-  '[data-js="card__answer-button--5"]'
-);
-
-// Functions for BookMark Buttons and Answer Buttons
+function getElementbyDataJS(elementIdentifier) {
+  const newVariable = document.querySelector(
+    `[data-js="${elementIdentifier}"]`
+  );
+  return newVariable;
+}
 
 function toggleBookmarkButton(id) {
   id.classList.toggle("card__bookmark-button--clicked");
@@ -44,20 +15,38 @@ function toggleBookmarkButton(id) {
 
 function toggleAnswerText(id) {
   const answerText = document.querySelector(
-    '[data-js="card__answer-text--' + id + '"]'
+    `[data-js="card__answer-text--${id}"]`
   );
 
   const answerButton = document.querySelector(
-    '[data-js="card__answer-button--' + id + '"]'
+    `[data-js="card__answer-button--§{id}"]`
   );
 
   answerText.classList.toggle("card__answer-text--show");
-  answerText.classList.contains("card__answer-text--show")
-    ? (answerButton.textContent = "Hide Answer")
-    : (answerButton.textContent = "Show Answer");
-
-  answerButton.classList.toggle("card__answer-button--active");
+  if (answerText.classList.contains("card__answer-text--show")) {
+    answerButton.textContent = "Hide Answer";
+    answerButton.style.backgroundColor = "var(--highlight-color)";
+  } else {
+    answerButton.textContent = "Show Answer";
+    answerButton.style.backgroundColor = "var(--main-color)";
+  }
 }
+
+// Variables for Bookmark Buttons
+
+const bookmarkButton1 = getElementbyDataJS("card__bookmark-button--1");
+const bookmarkButton2 = getElementbyDataJS("card__bookmark-button--2");
+const bookmarkButton3 = getElementbyDataJS("card__bookmark-button--3");
+const bookmarkButton4 = getElementbyDataJS("card__bookmark-button--4");
+const bookmarkButton5 = getElementbyDataJS("card__bookmark-button--5");
+
+// Variables for Answer Buttons
+
+const answerButton1 = getElementbyDataJS("card__answer-button--1");
+const answerButton2 = getElementbyDataJS("card__answer-button--2");
+const answerButton3 = getElementbyDataJS("card__answer-button--3");
+const answerButton4 = getElementbyDataJS("card__answer-button--4");
+const answerButton5 = getElementbyDataJS("card__answer-button--5");
 
 // Event Listeners for Bookmark Buttons
 

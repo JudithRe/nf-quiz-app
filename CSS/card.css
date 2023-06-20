@@ -64,10 +64,6 @@
   background: var(--highlight-color);
 }
 
-.card__answer-button--active {
-  background-color: var(--highlight-color);
-}
-
 .card__answer-text {
   padding: 10px 25px;
   display: none;
