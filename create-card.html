@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App: Create your Cards</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+  </head>
+  <body data-js="main-content">
+    <header class="header" data-js="header">
+      <i class="bi bi-puzzle-fill icon"></i>
+      <i class="bi bi-puzzle icon2"></i>
+      <h1>Create your Question</h1>
+    </header>
+    <main data-js="content-area" class="content-area">
+      <section class="card">
+        <i class="bi bi-plus-circle-fill icon"></i>
+        <h2 id="create-form__title">Create your own question</h2>
+        <form
+          data-js="create-form"
+          class="create-form"
+          aria-labelledby="create-form__title"
+        >
+          <label for="your-question">Add your question</label>
+          <textarea
+            name="question"
+            id="your-question"
+            rows="3"
+            maxlength="150"
+            data-js="question"
+            required
+          ></textarea>
+          <p class="create-form__character-display">
+            Characters left:
+            <span data-js="create-form__character-display--question">150</span>
+          </p>
+          <label for="your-answer">Add the correct answer</label>
+          <textarea
+            name="answer"
+            id="your-answer"
+            rows="5"
+            maxlength="150"
+            data-js="answer"
+            required
+          ></textarea>
+          <p class="create-form__character-display">
+            Characters left:
+            <span data-js="create-form__character-display--answer">150</span>
+          </p>
+          <label for="tags">Which tag applies?</label>
+          <input name="yourTags" id="tags" type="text" required />
+          <button data-js="create-form__button" type="submit">
+            Create Question
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-menu">
+          <li>
+            <a aria-label="go to home page" href="index.html"
+              ><i class="bi bi-house-door-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a aria-label="go to bookmarks" href="bookmarks.html"
+              ><i class="bi bi-bookmarks-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              id="footer-menu--active"
+              aria-label="go to create card"
+              href="create-card.html"
+              ><i class="bi bi-plus-circle-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a aria-label="go to profile page" href="profile.html"
+              ><i class="bi bi-person-fill"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script src="/JS/card.js"></script>
+  <script src="/JS/createCard.js"></script>
+</html>

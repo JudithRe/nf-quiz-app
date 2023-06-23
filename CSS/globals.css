@@ -13,10 +13,12 @@
 
   --header-image-height--desktop: 150px;
   --header-image-height--mobile: 100px;
-  --heading1-height--desktop: 2rem;
+  --heading1-height--desktop: 1.8rem;
   --heading1-height--mobile: 1.5rem;
   --gap-height: 20px;
-  --header-height: calc(var(--header-image-height--mobile) + var(--gap-height));
+  --header-height: calc(
+    var(--header-image-height--mobile) + var(--gap-height) + 1rem
+  );
   --footer-menu-height: 5rem;
 }
 
