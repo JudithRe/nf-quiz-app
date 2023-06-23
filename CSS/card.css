@@ -11,6 +11,8 @@
   border-radius: 10px;
   max-width: 450px;
   min-width: 350px;
+  min-height: 220px;
+  transition: 0.8s;
 }
 
 .card__bookmark-button {
@@ -21,17 +23,20 @@
   top: -1rem;
   right: 15px;
   color: var(--main-color);
+  transition: 0.1s linear;
+}
+
+.card__bookmark-button:hover {
+  transform: scale(1.1);
 }
 
 .card__bookmark-button--clicked {
   color: var(--highlight-color);
 }
 
-.card__bookmark-button img {
-  height: 50px;
-}
-
 .card__tag-list {
+  position: absolute;
+  top: -15px;
   align-self: flex-start;
   display: flex;
   gap: 15px;
@@ -45,6 +50,11 @@
   border-radius: 10px;
 }
 
+.card h2 {
+  padding: 15px 0;
+  margin: 35px 0 15px 0;
+}
+
 /* Answer Button and Text Styling*/
 
 .card__answer-button {
@@ -56,19 +66,25 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 3px 10px var(--dark-background-color);
+  box-shadow: 5px 5px 10px var(--dark-background-color);
   position: absolute;
   bottom: 35px;
   right: 20px;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .card__answer-button:hover {
   background: var(--highlight-color);
+  transform: scale(0.9);
+  box-shadow: 4px 4px 5px var(--main-color);
 }
 
 .card__answer-text {
-  padding: 10px 25px;
+  padding: 35px;
+  width: 100%;
+  margin: -15px 0 60px 0;
   display: none;
-  border-radius: 3px;
+  border-radius: 10px;
+  background-color: var(--light-background-color);
 }
 
 .card__answer-text--show {
@@ -85,45 +101,4 @@
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 3px 10px var(--dark-background-color);
-}
-
-.multiple-choice {
-  display: flex;
-  gap: 15px;
-}
-
-@keyframes horizontal-shaking {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(5px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes vertical-shaking {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(5px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  75% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

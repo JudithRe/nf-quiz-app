@@ -4,7 +4,7 @@
   --main-color: #18687b;
   --dark-highlight: #0e343e;
   --highlight-color: #33a8c5;
-  --dark-background-color: #adc3c8;
+  --dark-background-color: #6d8697;
   --light-background-color: #f1f7f5;
   --white-background-color: #ffff;
   --wrong-highlight-color: #a81955;
@@ -45,6 +45,7 @@ h1 {
 
 body {
   background-color: #f1f7f5;
+  transition: 0.8s;
 }
 
 .content-area {
