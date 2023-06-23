@@ -37,6 +37,10 @@
   background-color: var(--highlight-color);
 }
 
+.dark-mode-input + span::before {
+  transition: 0.8s;
+}
+
 .dark-mode-input:checked + span::before {
   transform: translateX(30px);
 }
