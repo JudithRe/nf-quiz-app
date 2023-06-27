@@ -23,14 +23,13 @@
   box-shadow: 5px 5px 10px var(--dark-background-color);
   transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin: auto;
-  }
+}
 
 .create-form button:hover {
   background-color: var(--highlight-color);
   transform: scale(0.9);
-box-shadow: 3px 3px 5px black);
+  box-shadow: 4px 4px 5px var(--main-color);
 }
-
 
 .create-form input,
 .create-form textarea {
