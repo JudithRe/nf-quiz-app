@@ -1,0 +1,8 @@
+@import "./components/MainContent/globals.css";
+@import "./components/Header/header.css";
+@import "./components/Card/card.css";
+@import "./components/Footer/footer.css";
+@import "./components/ProfilePage/profile-card.css";
+@import "./components/DarkMode-Button/darkmode-button.css";
+@import "./components/Create-Form/create-form.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
