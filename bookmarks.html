@@ -4,133 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <script
+      src="./components/BookmarkedContent/BookmarkedContent.js"
+      type="module"
+    ></script>
   </head>
-  <body>
+  <body data-js="main-content">
     <header class="header" data-js="header">
       <i class="bi bi-puzzle-fill icon"></i>
       <i class="bi bi-puzzle icon2"></i>
       <h1>Your Bookmarks</h1>
     </header>
-    <main class="content-area">
-      <section class="card">
-        <button
-          aria-label="bookmark this question"
-          class="card__bookmark-button card__bookmark-button--clicked"
-          data-js="card__bookmark-button--1"
-        >
-          <i class="bi bi-bookmark-fill"></i>
-        </button>
-        <h2>What was the follow-up book to "Bridget Jones's Diary"?</h2>
-        <button class="card__answer-button" data-js="card__answer-button--1">
-          Show Answer
-        </button>
-
-        <p class="card__answer-text" data-js="card__answer-text--1">
-          Bridget Jones: The Edge of Reason
-        </p>
-
-        <ul class="card__tag-list">
-          <li>Arts</li>
-          <li>Literature</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <button
-          aria-label="bookmark this question"
-          class="card__bookmark-button card__bookmark-button--clicked"
-          data-js="card__bookmark-button--2"
-        >
-          <i class="bi bi-bookmark-fill"></i>
-        </button>
-        <h2>
-          Which daughter of a president had a shade of blue named after her?
-        </h2>
-        <button class="card__answer-button" data-js="card__answer-button--2">
-          Show Answer
-        </button>
-
-        <p class="card__answer-text" data-js="card__answer-text--2">
-          Theodore Roosevelt's daughter Alice
-        </p>
-
-        <ul class="card__tag-list">
-          <li>Politics</li>
-          <li>History</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <button
-          aria-label="bookmark this question"
-          class="card__bookmark-button card__bookmark-button--clicked"
-          data-js="card__bookmark-button--3"
-        >
-          <i class="bi bi-bookmark-fill"></i>
-        </button>
-        <h2>"Brass In Pocket" was a hit for which band?</h2>
-        <button class="card__answer-button" data-js="card__answer-button--3">
-          Show Answer
-        </button>
-
-        <p class="card__answer-text" data-js="card__answer-text--3">
-          The Pretenders
-        </p>
-
-        <ul class="card__tag-list">
-          <li>Entertainment</li>
-          <li>Music</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <button
-          aria-label="bookmark this question"
-          class="card__bookmark-button card__bookmark-button--clicked"
-          data-js="card__bookmark-button--4"
-        >
-          <i class="bi bi-bookmark-fill"></i>
-        </button>
-        <h2>What is the birth name of US President Bill Clinton?</h2>
-        <button class="card__answer-button" data-js="card__answer-button--4">
-          Show Answer
-        </button>
-
-        <p class="card__answer-text" data-js="card__answer-text--4">
-          William Jefferson Blythe III
-        </p>
-
-        <ul class="card__tag-list">
-          <li>Politics</li>
-          <li>History</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <button
-          aria-label="bookmark this question"
-          class="card__bookmark-button card__bookmark-button--clicked"
-          data-js="card__bookmark-button--5"
-        >
-          <i class="bi bi-bookmark-fill"></i>
-        </button>
-        <h2>
-          What is the Southeast Asian method of dying fabric using wax to create
-          designs?
-        </h2>
-        <button class="card__answer-button" data-js="card__answer-button--5">
-          Show Answer
-        </button>
-
-        <p class="card__answer-text" data-js="card__answer-text--5">Batik</p>
-
-        <ul class="card__tag-list">
-          <li>General</li>
-          <li>Culture</li>
-        </ul>
-      </section>
-    </main>
+    <main class="content-area" data-js="content-area-bookmarks"></main>
     <footer>
       <nav>
         <ul class="footer-menu">
@@ -161,5 +47,4 @@
       </nav>
     </footer>
   </body>
-  <script src="/JS/card.js"></script>
 </html>
